@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>WhatsApp Automation 2.0</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script type="text/javascript" src="/eel.js"></script>
+
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <link rel="stylesheet" href="main.css">
+
+    <script src="//code.jquery.com/jquery-1.12.0.min.js"></script>
+    <script src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+
+</head>
+
+<body>
+    <br><br><br><br><br>
+    <input type="button " class="btn btn-success update-button" value="Update" onclick="update()">
+    <div class="container">
+        <div class="jumbotron">
+            <h1><b>WhatsApp Automation 2.0</b> </h1>
+        </div>
+    </div>
+    <form id="regForm" action="">
+
+
+        <!-- One "tab" for each step in the form: -->
+        <div id="updatepage">
+            <div class="mb-3">
+                <label for="username" class="form-label">Username</label>
+                <input type="email" class="form-control" id="username">
+                <div id="emailHelp" class="form-text">Please Enter your username</div><br><br>
+                <input type="button" class="btn btn-success update-environment-button" value="Update Now" onclick="updateEnviron()">
+                <p id="msg"></p>
+            </div>
+        </div>
+
+        <div class="tab" id="pageone">
+            <h1>Scan the QR Code & wait for WhatsApp to load completely</h1><br><br>
+            <input type="button" class="btn btn-primary custom-button" value="Get Started" onclick="nextPrev(1)">
+        </div>
+
+        <div class="tab">
+            <div class="form-group">
+                <label for="contactSheet"><b>Contacts Sheet</b></label>
+                <input type="file" class="form-control" id="contactSheet">
+            </div><br>
+
+            <div class="form-group">
+                <label for="message"><b>Message :</b></label>
+                <textarea class="form-control" rows="5" id="message"></textarea>
+            </div><br>
+
+            <div class="form-group">
+                <label for="groupName"><b>Images & Videos</b></label>
+                <input type="file" class="form-control" id="image" multiple>
+            </div><br>
+
+            <div class="form-group">
+                <label for="groupName"><b>Documents</b></label>
+                <input type="file" class="form-control" id="docs" multiple>
+            </div><br>
+            <input type="button" class="btn btn-primary custom-button" value="Load Contacts"
+                onclick="startProgram(); nextPrev(1);">
+        </div>
+
+        <div class="tab">
+            <b>Fetched Details</b>
+            <p id="loading">Waiting for list to be fetched...</p>
+            <br>
+            <div class="row">
+                <div class="col-sm-4">
+                    <div class="panel panel-success">
+                        <div class="panel-heading"><b>Number of Contacts:</b></div>
+                        <div class="panel-body" id="showContactNo"></div>
+                    </div>
+                </div>
+                <div class="col-sm-8">
+                    <div class="panel panel-success">
+                        <div class="panel-heading"><b>Contacts List</b></div>
+                        <div class="panel-body" id="contactList"></div>
+                    </div>
+                </div>
+            </div><br>
+            <input type="button" class="btn btn-primary custom-button" value="Send Messages"
+                onclick="sendMessages(); nextPrev(1);">
+
+        </div>
+
+        <div class="tab"><b>Logs</b>
+            <div class="well">
+                <p id="notify_bar"></p>
+            </div>
+            <br>
+            <div class="panel panel-warning">
+                <div class="panel-heading"><b>Unsaved or Blocked Contacts</b></div>
+                <div class="panel-body" id="notifyFail"></div>
+            </div>
+            <br>
+
+            <input type="button" class="btn btn-danger custom-button" value="Terminate" onclick="closeBrowser()">
+
+        </div>
+
+
+        <br>
+        <div style="overflow:auto;">
+            <div style="float:right;">
+                <button type="button" class="btn btn-warning" id="prevBtn" onclick="nextPrev(-1)">&#171;
+                    Previous</button>
+                <!-- <button type="button" id="prevBtn" onclick="nextPrev(-1)">Previous</button> -->
+                <!-- <button type="button" id="nextBtn" onclick="nextPrev(1)">Next</button> -->
+            </div>
+        </div>
+
+        <!-- Circles which indicates the steps of the form: -->
+        <div style="text-align:center;margin-top:40px;">
+            <span class="step"></span>
+            <span class="step"></span>
+            <span class="step"></span>
+            <span class="step"></span>
+        </div>
+
+    </form>
+    <script src="bootstrap.bundle.min.js"></script>
+    <script type="text/javascript" src="main.js"></script>
+
+</body>
+
+</html>

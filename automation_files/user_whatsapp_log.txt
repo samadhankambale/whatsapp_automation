@@ -1,0 +1,9 @@
+**** AUTOMATION START **** 
+Sending Failed to Priyanka Ni Nimap. Xpaths have been changed. 1 remaining contacts 
+Sending Failed to Danish Sayyed Nimap. Xpaths have been changed. 0 remaining contacts 
+****AUTOMATION COMPLETE**** 
+**** AUTOMATION START **** 
+****AUTOMATION COMPLETE**** 
+**** AUTOMATION START **** 
+Sending Failed to Priyanka Ni Nimap. Xpaths have been changed. 1 remaining contacts 
+Sending Failed to Danish Sayyed Nimap. Xpaths have been changed. 0 remaining contacts 

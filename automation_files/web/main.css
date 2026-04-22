@@ -1,0 +1,109 @@
+/* body{
+  overflow-y: hidden;
+  overflow-x: hidden;
+} */
+/* Style the form */
+
+body{
+  background-image: url("bg.jpg");
+  background-size: cover;
+}
+#regForm {
+  background-color: #ffffff;
+  border-radius: 10%;
+  margin: 30px auto;
+  padding: 40px;
+  width: 70%;
+  min-width: 300px;
+}
+
+/* Style the input fields */
+input {
+  padding: 10px;
+  width: 100%;
+  font-size: 17px;
+  font-family: Raleway;
+  border: 1px solid #aaaaaa;
+}
+
+/* Mark input boxes that gets an error on validation: */
+input.invalid {
+  background-color: #ffdddd;
+}
+
+/* Hide all steps by default: */
+.tab {
+  display: none;
+}
+
+/* Make circles that indicate the steps of the form: */
+.step {
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbbbbb;
+  border: none;
+  border-radius: 50%;
+  display: inline-block;
+  opacity: 0.5;
+}
+
+/* Mark the active step: */
+.step.active {
+  opacity: 1;
+}
+
+/* Mark the steps that are finished and valid: */
+.step.finish {
+  background-color: #4CAF50;
+}
+
+
+.container {
+  padding: 1vw;
+  background-color: #25D366;
+  border-radius: 10vw;
+  text-align: center;
+  color: white;
+  text-shadow: 1px 1px 0 black, -1px -1px 0 black, -1px 1px 0 black, 1px -1px 0 black;
+}
+
+
+#pageone{
+  text-align: center;
+}
+
+#updatepage{
+  display: none;
+}
+
+.custom-button{
+  text-shadow: 1px 1px 0 black, -1px -1px 0 black, -1px 1px 0 black, 1px -1px 0 black;
+  text-align: center;
+  width: 15vw;
+  /* background-color: #25D366; */
+  font-size: 20px;
+  block-size: auto;
+  font-weight: bold;
+}
+
+.update-button{
+  position: absolute;
+  text-shadow: 1px 1px 0 black, -1px -1px 0 black, -1px 1px 0 black, 1px -1px 0 black;
+  text-align: center;
+  width: 13vw;
+  background-color: #25D366;
+  font-size: 20px;
+  font-weight: bold;
+  right: 1vw;
+  top: 1vw;
+}
+
+.update-environment-button{
+  text-shadow: 1px 1px 0 black, -1px -1px 0 black, -1px 1px 0 black, 1px -1px 0 black;
+  text-align: center;
+  width: 13vw;
+  background-color: #25D366;
+  font-size: 20px;
+  font-weight: bold;
+}
