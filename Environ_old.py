@@ -13,6 +13,7 @@ docs_media_send_x_path = "/html/body/div[1]/div/div/div[2]/div[2]/div[2]/span/di
 attach_x_path = 'span[data-icon="plus"]'
 
 #search_box_x_path = '//*[@id="side"]/div[1]/div/div/div[2]/div/div[1]'
+
 search_box_x_path = '//*[@id="side"]/div[1]/div/div[2]/div[2]/div/div/p'
 
 display_picture_box_x_path = "_13jwn"

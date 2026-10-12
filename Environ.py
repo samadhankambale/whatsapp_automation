@@ -1,21 +1,19 @@
 
 
-
-
 previous_user_name = None
 
 # chat_box_x_path = "/html/body/div[1]/div/div/div[2]/div[4]/div/footer/div[1]/div/span/div/div[2]/div[1]/div/div[1]/p"
 # chat_box_x_path = "/html/body/div[1]/div/div/div[3]/div[4]/div/footer/div[1]/div/span/div/div[2]/div[1]/div/div[1]/p"
 # chat_box_x_path = "/html/body/div[1]/div/div/div[3]/div/div[4]/div/footer/div[1]/div/span/div/div[2]/div/div[3]/div[1]/p"
 
-# new chat box x path ----------
+# ---------new chat box x path ----------
 #  "/html/body/div[1]/div/div/div/div/div[3]/div/div[5]/div/footer/div[1]/div/span/div/div/div/div[3]/div[1]/p"
-chat_box_x_path = "/html/body/div[1]/div/div/div/div/div[3]/div/div[5]/div/footer/div[1]/div/span/div/div/div/div[3]/div[1]/p"
+chat_box_x_path = "/html/body/div[2]/div/div/div/div/div[3]/div/div[4]/div/footer/div[1]/div/span/div/div/div/div[3]/div[1]/p"
 
 # ------------ updated paths -----------------
 
 
-search_box_x_path = '/html/body/div[1]/div/div/div/div/div[3]/div/div[4]/div/div[1]/div[1]/div/div/div/div/div/div[2]/input'
+search_box_x_path = '/html/body/div[2]/div/div/div/div/div[3]/div/div[3]/div/div[1]/div[1]/div/div/div/div/div/div[2]/input'
 # search_box_x_path = "/html/body/div[1]/div/div/div/div/div[3]/div/div[5]/div/header/div[1]/div[2]/div/div"
 
 
@@ -88,7 +86,7 @@ image_box_css_selecor = "input[accept='image/*,video/mp4,video/3gpp,video/quickt
 
 # -------- Updated cancel button ----------
 
-cancel_btn_x_path = "/html/body/div[1]/div/div/div/div/div[3]/div/div[4]/div/div[1]/div[1]/div/div/div/div/div/div[3]/div/button"
+cancel_btn_x_path = "//button[@data-tab='3' and @aria-label='End icon button']"
 
 # cancel_btn_x_path = '/html/body/div[1]/div/div/div[2]/div[3]/div/div[1]/div/div[2]/span/button'
 # cancel_btn_x_path = (
@@ -98,7 +96,7 @@ cancel_btn_x_path = "/html/body/div[1]/div/div/div/div/div[3]/div/div[4]/div/div
 
 # ----------updated first x path ----------------
 
-first_result_x_path = "/html/body/div[1]/div/div/div/div/div[3]/div/div[4]/div/div[4]/div[1]/div/div/div[2]/div/div/div/div[2]/div[1]/div[1]"
+first_result_x_path = "/html/body/div[2]/div/div/div/div/div[3]/div/div[3]/div/div[3]/div[1]/div/div/div[2]/div/div/div/div[2]/div[1]/div[1]"
 
 # first_result_x_path = "/html/body/div[1]/div/div/div[2]/div[3]/div/div[3]/div[1]/div/div/div[7]/div/div/div/div[2]/div[1]/div[1]/div/span"
 
@@ -107,7 +105,7 @@ first_result_x_path = "/html/body/div[1]/div/div/div/div/div[3]/div/div[4]/div/d
 # group_label_x_path = "/html/body/div[1]/div/div/div[3]/div/div[4]/div/header/div[2]/div[1]/div/span"
 chat_label_x_path = (
     # "/html/body/div[1]/div/div[1]/div[3]/div/div[4]/div/header/div[2]/div/div/div/div/span"
-    "/html/body/div[1]/div/div/div/div/div[3]/div/div[5]/div/header/div[1]/div[2]/div/div"
+    "/html/body/div[2]/div/div/div/div/div[3]/div/div[4]/div/header/div[1]/div[2]"
 )
 group_label_x_path = (
     # "/html/body/div[1]/div/div[1]/div[3]/div/div[4]/div/header/div[2]/div[1]/div/span"
